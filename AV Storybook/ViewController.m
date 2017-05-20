@@ -10,7 +10,7 @@
 #import "AVData.h"
 @import AVFoundation;
 
-@interface ViewController ()
+@interface ViewController () <UIImagePickerControllerDelegate, UINavigationControllerDelegate>
 
 @property (nonatomic) AVData *audioVisualData;
 
@@ -90,5 +90,44 @@ self.audioVisualData.savedAudioFile = [NSURL fileURLWithPath:[docsDir stringByAp
 
 }
 
+- (IBAction)pickImage:(id)sender {
+    UIImagePickerController *ipc = [[UIImagePickerController alloc] init];
+    //init the vc
+    //set the source type
+    //get the available media types based on your source type
+    //set the media types
+    //assign the delegate of the imagepicker to self
+    //present the image picker
+    
+
+//    if ([UIImagePickerController isSourceTypeAvailable:UIImagePickerControllerSourceTypeCamera]) {
+//  
+//        ipc.sourceType = UIImagePickerControllerSourceTypeCamera;
+//    } else {
+//     
+        ipc.sourceType = UIImagePickerControllerSourceTypePhotoLibrary;
+//    }
+    
+
+    NSArray *availableMediaTypes = [UIImagePickerController availableMediaTypesForSourceType:ipc.sourceType];
+    NSLog(@"Media types are %@", availableMediaTypes);
+    ipc.mediaTypes = availableMediaTypes;
+   
+    ipc.delegate = self;
+    
+    [self presentViewController:ipc animated:YES completion:^{
+        NSLog(@"Picker is showing");
+    }];
+}
+
+
+- (void)imagePickerController:(UIImagePickerController *)picker didFinishPickingMediaWithInfo:(NSDictionary<NSString *,id> *)info
+{
+    NSLog(@"Finished picking %@", info);
+    self.image.image = info[UIImagePickerControllerOriginalImage];
+    [picker dismissViewControllerAnimated:YES completion:^{
+        NSLog(@"done");
+    }];
+}
 
 @end

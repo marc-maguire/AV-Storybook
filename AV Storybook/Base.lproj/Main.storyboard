@@ -27,6 +27,7 @@
                                 <state key="normal" title="Camera"/>
                                 <connections>
                                     <action selector="imagePicker:" destination="BYZ-38-t0r" eventType="touchUpInside" id="UVc-FE-Gda"/>
+                                    <action selector="pickImage:" destination="BYZ-38-t0r" eventType="touchUpInside" id="1Y2-eQ-PFx"/>
                                 </connections>
                             </button>
                             <imageView contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="AP13" translatesAutoresizingMaskIntoConstraints="NO" id="t7e-XR-kkT">
