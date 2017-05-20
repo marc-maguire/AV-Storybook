@@ -13,6 +13,7 @@
 		9283D9141ECF811A00F5F8E5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9283D9121ECF811A00F5F8E5 /* Main.storyboard */; };
 		9283D9161ECF811A00F5F8E5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9283D9151ECF811A00F5F8E5 /* Assets.xcassets */; };
 		9283D9191ECF811A00F5F8E5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9283D9171ECF811A00F5F8E5 /* LaunchScreen.storyboard */; };
+		9283D9221ECF81D800F5F8E5 /* AVData.m in Sources */ = {isa = PBXBuildFile; fileRef = 9283D9211ECF81D800F5F8E5 /* AVData.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,8 @@
 		9283D9151ECF811A00F5F8E5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		9283D9181ECF811A00F5F8E5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		9283D91A1ECF811A00F5F8E5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9283D9201ECF81D800F5F8E5 /* AVData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AVData.h; sourceTree = "<group>"; };
+		9283D9211ECF81D800F5F8E5 /* AVData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AVData.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,11 +61,11 @@
 		9283D9081ECF811A00F5F8E5 /* AV Storybook */ = {
 			isa = PBXGroup;
 			children = (
-				9283D90C1ECF811A00F5F8E5 /* AppDelegate.h */,
-				9283D90D1ECF811A00F5F8E5 /* AppDelegate.m */,
 				9283D90F1ECF811A00F5F8E5 /* ViewController.h */,
 				9283D9101ECF811A00F5F8E5 /* ViewController.m */,
 				9283D9121ECF811A00F5F8E5 /* Main.storyboard */,
+				9283D9201ECF81D800F5F8E5 /* AVData.h */,
+				9283D9211ECF81D800F5F8E5 /* AVData.m */,
 				9283D9151ECF811A00F5F8E5 /* Assets.xcassets */,
 				9283D9171ECF811A00F5F8E5 /* LaunchScreen.storyboard */,
 				9283D91A1ECF811A00F5F8E5 /* Info.plist */,
@@ -74,6 +77,8 @@
 		9283D9091ECF811A00F5F8E5 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				9283D90C1ECF811A00F5F8E5 /* AppDelegate.h */,
+				9283D90D1ECF811A00F5F8E5 /* AppDelegate.m */,
 				9283D90A1ECF811A00F5F8E5 /* main.m */,
 			);
 			name = "Supporting Files";
@@ -150,6 +155,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9283D9221ECF81D800F5F8E5 /* AVData.m in Sources */,
 				9283D9111ECF811A00F5F8E5 /* ViewController.m in Sources */,
 				9283D90E1ECF811A00F5F8E5 /* AppDelegate.m in Sources */,
 				9283D90B1ECF811A00F5F8E5 /* main.m in Sources */,
